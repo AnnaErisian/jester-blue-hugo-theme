@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <div class="post">
+    <div class="post_head">
+      <h2>{{ .LinkTitle }}</h2>
+      <div class="h-date">{{ .Date.Format "January 2, 2006" }}</div>
+    </div>
+    <div class="content">{{ .Content }}</div>
+    <div class="post-summary-tags">Tags: 
+        {{- partial "tags.html" . -}}
+    </div>
+  </div>
+{{ end }}

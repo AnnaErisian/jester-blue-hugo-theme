@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <h2 class="home-listing-title">Recent Posts</h2>
+  <div id="#recent-posts">
+      {{- partial "listing.html" . -}}
+  </div>
+  {{- partial "pagination.html" . -}}
+{{ end }}

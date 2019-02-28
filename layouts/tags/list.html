@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <h2 class="tag-listing-title">Posts tagged {{ .Title }}</h2>
+  <div id="#tagged-posts">
+    {{- partial "listing.html" . -}}
+  </div>
+{{ end }}

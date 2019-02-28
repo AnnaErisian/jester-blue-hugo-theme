@@ -1,0 +1,5 @@
+{{ range where .Site.Pages "Type" "post" }}
+  <a href="{{ .Permalink}}">
+    <p><span class="h-date">{{ .Date.Format "January 2, 2006" }} </span> <span class="archive-title"> {{ .Title }}</span></p>
+  </a>
+{{ end }}

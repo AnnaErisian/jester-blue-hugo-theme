@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h2 class="tag-listing-title">All Tags</h2>
+  <div id="#tagged-posts">
+    <div class="post">
+    {{ range (.Paginator 99999999999999999).Pages }}
+      <a href="{{ .Permalink}}">
+        <p><span class="archive-title"> {{ .Title }}</span></p>
+      </a>
+    {{ end }}
+  </div>
+  </div>
+{{ end }}

@@ -1,0 +1,13 @@
+{{ range .Paginator.Pages }}
+  <div class="post-summary">
+    <div class="post_head">
+        <h3><a href="{{ .Permalink}}">{{ .Title }}</a></h3>
+        <div class="h-date">{{ .Date.Format "January 2, 2006" }}</div>
+    </div>
+    <div class="content">{{ .Summary }}</div>
+    <a class="readmore" href="{{ .Permalink}}">Read More</a>
+    <div class="post-summary-tags">Tags: 
+      {{- partial "tags.html" . -}}
+    </div>
+  </div>
+{{ end }}

@@ -1,0 +1,29 @@
+$color-main: rgb(190,204,227);
+//$color-secondary: rgb(225,220,226);
+$color-secondary: #bec1e3;
+$color-tertiary: rgba(185,92,7, 0.5);
+$color-qurtenary: rgb(185,92,7);
+$color-text-main: #111;
+$color-text-subtle: #444;
+$color-text-secondary: #ccc;
+$color-link: #5f4821;
+$color-link-visited: #867032;
+
+$header-bar-desktop-border-radius: 18px;
+
+$body-color: $color-main;
+$header-color: $color-tertiary;
+
+$button-bg-color: $color-secondary;
+$button-border-color: $color-tertiary;
+$link-color: $color-link;
+$link-color-visited: $color-link-visited;
+
+$post-border-color: $color-tertiary;
+$post-background-color: $color-secondary;
+
+$date-color: $color-text-subtle;
+$tags-color: $color-text-subtle;
+$readmore-bg-color: lighten($color-secondary, 5%);
+$readmore-border-color: $color-tertiary;
+$readmore-text-color: $color-link;
