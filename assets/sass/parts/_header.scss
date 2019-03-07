@@ -1,0 +1,116 @@
+#top-container {
+  padding: 0 1rem;
+  
+  #header {
+    border-radius: 10px;
+    
+    h1 {
+      color: $color-text-main;
+      display: inline-block;
+      font-family: gf-amaticsc;
+      font-size: 10vw;
+      align-self: center;
+      width: 100%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 34px);
+      text-align: center;
+      z-index: 2;
+    }
+    
+    img {
+      display: none;
+    }
+
+    .bar {
+      background-color: $header-color;
+      height: 95px;
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      flex: none;
+      background: $header-color;
+      border-radius: $header-bar-desktop-border-radius;
+      z-index: -1;
+    }
+    
+  }
+
+  #menu {
+    text-align: right;
+    font-size: 12pt;
+    ul {
+      display: inline-block;
+      
+      li {
+        background-color: $button-bg-color;
+        border: 2px $button-border-color solid;
+        border-radius: 5px;
+        display: inline-block;
+        list-style: none;
+        margin: 0.3rem 0.15rem;
+        
+        a {
+          display: inline-block;
+          padding: 0.35rem 0.75rem;
+        
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 800px) {
+  #top-container {
+    #header {
+      display: flex;
+      
+      h1 {
+        flex-basis: 0;
+        flex-grow: 1;
+        font-size: 64pt;
+        padding-left: 1rem;
+        position: initial;
+        text-align: left;
+        text-indent: 0;
+        transform: none;
+      }
+      
+      img {
+        align-self: center;
+        display: inline-block;
+        flex: none;
+        height: 150px;
+        position: initial;
+        right: $header-bar-desktop-border-radius;
+        transform: none;
+      }
+      
+      .bar {
+        background: linear-gradient(to right, $header-color 40%, transparent);
+        border-radius: $header-bar-desktop-border-radius 0 0 $header-bar-desktop-border-radius;
+        position: absolute;
+        transform: translate(0, 30px);
+        width: 90%;
+      }
+    }
+
+    #menu {
+      font-size: 100%;
+      ul {
+        
+        li {
+          border-radius: 5px;
+          margin: 0.3rem 0.15rem;
+          
+          a {
+            padding: 0.65rem 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
